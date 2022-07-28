@@ -8,6 +8,7 @@ import Items from './components/Items'
 import ItemDetails from './components/ItemDetails'
 import Review from './components/Review'
 import Thanks from './components/Thanks'
+import NewItem from './components/NewItem'
 
 const BASE_URL = 'http://localhost:3001/api'
 
@@ -33,6 +34,10 @@ const App = () => {
           <Route path="/items/:id" element={<ItemDetails />} />
           <Route path="/review" element={<Review />} />
           <Route path="/thanks" element={<Thanks />} />
+          <Route
+            path="/newitem"
+            element={<NewItem items={items} setItems={setItems} />}
+          />
         </Routes>
       </main>
     </div>

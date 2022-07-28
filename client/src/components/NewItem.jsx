@@ -2,24 +2,25 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 
-const Review = (props) => {
+const NewItem = (props) => {
   let navigate = useNavigate()
 
-  const [reviewValues, setReviewValues] = useState({
+  const [itemValues, setItemValues] = useState({
     name: '',
-    email: '',
-    review: ''
+    price: '',
+    description: '',
+    image: ''
   })
 
   const handleChange = (e) => {
-    setReviewValues({ ...reviewValues, [e.target.name]: e.target.value })
+    setItemValues({ ...itemValues, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('submit')
-    axios.post('httpl://localhost:3001/api/review', reviewValues)
-    navigate('/thanks')
+    axios.post('httpl://localhost:3001/api/items', itemValues)
+    navigate('/items')
   }
 
   // const newReview = props.newReview
@@ -32,33 +33,41 @@ const Review = (props) => {
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
-          value={reviewValues.name}
+          placeholder="Item Name"
+          value={itemValues.name}
           onChange={handleChange}
         />
         <br></br>
         <br></br>
         <input
           type="text"
-          name="email"
-          placeholder="Your Email"
-          value={reviewValues.email}
+          name="price"
+          placeholder="Item Price"
+          value={itemValues.price}
           onChange={handleChange}
         />
         <br></br>
         <br></br>
         <input
           type="text"
-          name="rating"
-          placeholder="Your Review"
-          value={reviewValues.review}
+          name="description"
+          placeholder="Item Description"
+          value={itemValues.description}
           onChange={handleChange}
         />
         <br></br>
+        <br></br>
+        <input
+          type="text"
+          name="image"
+          placeholder="Please Put A Link To An Image Here"
+          value={itemValues.image}
+          onChange={handleChange}
+        />
         <button type="submit">Submit</button>
       </form>
     </div>
   )
 }
 
-export default Review
+export default NewItem

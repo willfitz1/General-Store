@@ -14,4 +14,6 @@ router.put('/items/:id', controllers.updateItem)
 
 router.delete('/items/:id', controllers.deleteItem)
 
+router.post('/reviews', controllers.createReview)
+
 module.exports = router
