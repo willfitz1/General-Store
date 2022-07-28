@@ -17,13 +17,4 @@ app.use('/api', routes)
 
 db.on('error', console.error.bind(console, 'MongoDB connectioon error:'))
 
-// app.get('/item', async (req, res) => {
-//   const items = await Item.find({})
-//   res.json(items)
-// })
-
-// app.get('/', (req, res) => {
-//   res.send('This is root!')
-// })
-
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))

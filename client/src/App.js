@@ -2,8 +2,25 @@ import Home from './components/Home'
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import './styles/App.css'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import Items from './components/Items'
+import ItemDetails from './components/ItemDetails'
+import Review from './components/Review'
+import Thanks from './components/Thanks'
+
+const BASE_URL = 'http://localhost:3001/api'
 
 const App = () => {
+  const [items, setItems] = useState([])
+  useEffect(() => {
+    const getItems = async () => {
+      const item = await axios.get(`${BASE_URL}/items`)
+      setItems(item.data.items)
+    }
+    getItems()
+  }, [])
+
   return (
     <div className="App">
       <header>
@@ -12,6 +29,10 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/items" element={<Items items={items} />} />
+          <Route path="/items/:id" element={<ItemDetails />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/thanks" element={<Thanks />} />
         </Routes>
       </main>
     </div>

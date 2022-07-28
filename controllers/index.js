@@ -1,4 +1,17 @@
 const Items = require('../models/items')
+const Review = require('../models/review')
+
+const createReview = async (req, res) => {
+  try {
+    const review = await new Review(req.body)
+    await review.save()
+    return res.status(201).json({
+      account
+    })
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
 
 const createItem = async (req, res) => {
   try {
@@ -23,7 +36,7 @@ const getAllItems = async (req, res) => {
 const getItemById = async (req, res) => {
   try {
     const { id } = req.params
-    const item = await Item.findById(id)
+    const item = await Items.findById(id)
     if (item) {
       return res.status(200).json({ item })
     }
@@ -55,6 +68,7 @@ const deleteItem = async (req, res) => {
   }
 }
 module.exports = {
+  createReview,
   createItem,
   getAllItems,
   getItemById,
