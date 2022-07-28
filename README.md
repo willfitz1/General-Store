@@ -1,4 +1,4 @@
-# Admin Dashboard
+# General Store
 
 ## Date 7/24/2022
 
@@ -8,11 +8,11 @@
 
 ## **_Welcome!_**
 
-Welcome to my custom admin dashboard. I wanted to create an example of what a dashboard would look like on a site where sales would be made. Such as a dropshipper or reseller would see when handling their products. Theres a lot of style out there of simple and complex dashboards, but most of them look the same. I wanted to create my own style, and give it a new look for people who are creating and selling.
+Welcome to my custom general store. Here you can check out the items we sell, and we would love if you left a review on our review page!
 
 ## **_Features_**
 
-I plan on featuring a number of navigations that will be used, such as profile, settings, log out and log in. It will be interactive, such as hovering over certain blocks and having them react a certain way (ie. glowing, outlined, bg changed, etc.) It will also be able to be easily visbile on both ios and standard displays.
+The general store will allow you to check out each item specifically, and leave a custom review for the website.
 
 ## **_Screenshots_**
 
@@ -22,11 +22,11 @@ I plan on featuring a number of navigations that will be used, such as profile, 
 
 ## **Future Updates**
 
-[ ] Added a custom color option
+[ ] Add a shopping cart.
 
-[ ] Allows users to intergrate more then one account
+[ ] Add more items to cart with + - buttons.
 
-[ ] Can export details and reports
+[ ] Leave a star rating.
 
 ## **_Credits_**
 
