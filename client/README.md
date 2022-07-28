@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Date 7/24/2022
 
-## Available Scripts
+### By William Fitzgerald
 
-In the project directory, you can run:
+#### [LinkedIN](https://www.linkedin.com/in/william-fitzgerald1/) | [GitHub](https://github.com/willfitz1)
 
-### `npm start`
+## **_Welcome!_**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to my custom admin dashboard. I wanted to create an example of what a dashboard would look like on a site where sales would be made. Such as a dropshipper or reseller would see when handling their products. Theres a lot of style out there of simple and complex dashboards, but most of them look the same. I wanted to create my own style, and give it a new look for people who are creating and selling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **_Features_**
 
-### `npm test`
+I plan on featuring a number of navigations that will be used, such as profile, settings, log out and log in. It will be interactive, such as hovering over certain blocks and having them react a certain way (ie. glowing, outlined, bg changed, etc.) It will also be able to be easily visbile on both ios and standard displays.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **_Screenshots_**
 
-### `npm run build`
+![Example1](https://themes.getbootstrap.com/wp-content/uploads/2022/01/clever-admin-dashboard-template-badge-2x.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Example2](https://assets.startbootstrap.com/img/screenshots/themes/sb-admin-2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Future Updates**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[ ] Added a custom color option
 
-### `npm run eject`
+[ ] Allows users to intergrate more then one account
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[ ] Can export details and reports
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **_Credits_**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[Trello](https://trello.com/b/AcS6yvMt/dashboard)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
-## Learn More
+[Markdown Guide](https://ia.net/writer/support/general/markdown-guide)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[drawIO](https://drive.google.com/file/d/1f8EtNYmoNLHXHDW9lxpdJ5n1JDt9A5cp/view?usp=sharing)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[LucidChart](https://lucid.app/lucidchart/72435a7f-d7c8-4a9b-91d0-fd551852e912/edit?viewport_loc=628%2C7%2C1899%2C1035%2C0_0&invitationId=inv_64c94c5c-5040-4f11-8238-83594d2030d6#)
