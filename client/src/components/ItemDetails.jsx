@@ -1,15 +1,15 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 const BASE_URL = 'http://localhost:3001/api'
 
 const ItemDetails = (props) => {
   const [item, setItem] = useState('')
-  let { id } = useParams()
+  // let { id } = useParams()
 
   useEffect(() => {
-    const getItemById = async () => {
+    const getItemById = async (id) => {
       let data = await axios.get(`${BASE_URL}/items/${id}`)
       setItem(data.data.item)
       console.log(data.data.item)

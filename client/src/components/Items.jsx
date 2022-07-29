@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import { useEffect } from 'react'
 
 const Items = (props) => {
   let navigate = useNavigate()
@@ -7,18 +9,43 @@ const Items = (props) => {
     navigate(`${item._id}`)
   }
 
+  const getItem = async (id) => {
+    console.log('banaana')
+    let res = await axios.get(`http://localhost:3001/api/items/${id}`)
+    props.getItems()
+  }
+  useEffect(() => {
+    getItem()
+  })
+  const deleteItem = async (id) => {
+    console.log('banaana')
+    let res = await axios.delete(`http://localhost:3001/api/items/${id}`)
+    props.getItems()
+  }
+
+  const refresh = () => {
+    window.location.reload(false)
+  }
+
+  const deleteitm = (item) => {
+    item.deleteItem(props.item._id)
+  }
+
+  function handleClick() {
+    refresh()
+    deleteitm()
+  }
+
   return (
     <div className="item-grid">
       {props.items?.map((item) => (
-        <div
-          className="item-card"
-          onClick={() => showItems(item)}
-          key={item._id}
-        >
+        <div className="item-card" key={item._id}>
           <img style={{ display: 'block' }} src={item.image} alt={item.name} />
           <h3>{item.name}</h3>
           <h4>{item.description}</h4>
           <h4>{item.price}</h4>
+          {/* <button onClick={() => deleteItem(item._id)}>Delete Item</button> */}
+          <button onClick={handleClick}>Delete Item</button>
         </div>
       ))}
     </div>

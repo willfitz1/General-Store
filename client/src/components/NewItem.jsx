@@ -23,8 +23,6 @@ const NewItem = (props) => {
     navigate('/items')
   }
 
-  // const newReview = props.newReview
-
   return (
     <div>
       <h1>Please leave us a review and let us know if you'd come back!</h1>

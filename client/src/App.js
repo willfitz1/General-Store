@@ -14,11 +14,12 @@ const BASE_URL = 'http://localhost:3001/api'
 
 const App = () => {
   const [items, setItems] = useState([])
+
+  const getItems = async () => {
+    const item = await axios.get(`${BASE_URL}/items`)
+    setItems(item.data.items)
+  }
   useEffect(() => {
-    const getItems = async () => {
-      const item = await axios.get(`${BASE_URL}/items`)
-      setItems(item.data.items)
-    }
     getItems()
   }, [])
 
@@ -36,7 +37,9 @@ const App = () => {
           <Route path="/thanks" element={<Thanks />} />
           <Route
             path="/newitem"
-            element={<NewItem items={items} setItems={setItems} />}
+            element={
+              <NewItem items={items} setItems={setItems} getItems={getItems} />
+            }
           />
         </Routes>
       </main>
