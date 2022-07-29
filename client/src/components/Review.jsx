@@ -18,7 +18,7 @@ const Review = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('submit')
-    axios.post('httpl://localhost:3001/api/review', reviewValues)
+    let res = axios.post('httpl://localhost:3001/api/review', reviewValues)
     navigate('/thanks')
   }
 
@@ -50,8 +50,8 @@ const Review = (props) => {
         <input
           type="text"
           name="rating"
-          placeholder="Your Review"
-          value={reviewValues.review}
+          placeholder={reviewValues.review}
+          // value={reviewValues.review}
           onChange={handleChange}
         />
         <br></br>

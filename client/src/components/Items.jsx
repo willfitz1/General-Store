@@ -17,6 +17,7 @@ const Items = (props) => {
   useEffect(() => {
     getItem()
   })
+
   const deleteItem = async (id) => {
     console.log('banaana')
     let res = await axios.delete(`http://localhost:3001/api/items/${id}`)
@@ -27,13 +28,9 @@ const Items = (props) => {
     window.location.reload(false)
   }
 
-  const deleteitm = (item) => {
-    item.deleteItem(props.item._id)
-  }
-
   function handleClick() {
     refresh()
-    deleteitm()
+    deleteItem()
   }
 
   return (
