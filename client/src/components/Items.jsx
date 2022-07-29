@@ -20,9 +20,9 @@ const Items = (props) => {
 
   const handleDelete = async (id) => {
     await axios.delete(`http://localhost:3001/api/items/${id}`)
-    props.getItems()
+    props.setItems()
     console.log('banaana')
-    window.location.reload(false)
+    window.location.reload(true)
   }
 
   return (
