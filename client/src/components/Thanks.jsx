@@ -4,10 +4,8 @@ const Thanks = (props) => {
   return (
     <div>
       <br></br>
-      <img
-        alt="thanks"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGu3EiUwoH5R07tcqHhcab-5EWuOszVY9TCQ&usqp=CAU"
-      />
+      <img alt="thanks" src="https://i.imgur.com/svxFbOB.png" />
+      <h1>Thank You For The Review! We Hope You Enjoyed Your Stay!</h1>
       <br></br>
       <br></br>
     </div>

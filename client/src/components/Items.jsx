@@ -18,20 +18,26 @@ const Items = (props) => {
     getItem()
   })
 
-  const deleteItem = async (id) => {
-    console.log('banaana')
-    let res = await axios.delete(`http://localhost:3001/api/items/${id}`)
-    props.getItems()
-  }
+  // const deleteItem = async (id) => {
+  //   console.log('banaana')
+  //   let res = await axios.delete(`http://localhost:3001/api/items/${id}`)
+  //   props.getItems()
+  // }
 
-  const refresh = () => {
+  // const refresh = () => {
+  //   window.location.reload(false)
+  // }
+
+  const handleDelete = async (id) => {
+    await axios.delete(`http://localhost:3001/api/items/${id}`)
+    props.getItems()
+    console.log('banaana')
     window.location.reload(false)
   }
 
-  function handleClick() {
-    refresh()
-    deleteItem()
-  }
+  // function handleClick() {
+  //   handleDelete()
+  // deleteItem()
 
   return (
     <div className="item-grid">
@@ -42,7 +48,7 @@ const Items = (props) => {
           <h4>{item.description}</h4>
           <h4>{item.price}</h4>
           {/* <button onClick={() => deleteItem(item._id)}>Delete Item</button> */}
-          <button onClick={handleClick}>Delete Item</button>
+          <button onClick={() => handleDelete(item._id)}>Delete Item</button>
         </div>
       ))}
     </div>
