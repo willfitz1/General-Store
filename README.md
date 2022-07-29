@@ -16,7 +16,7 @@ The general store will allow you to check out each item specifically, and leave 
 
 ## **_Screenshots_**
 
-![Example1](https://themes.getbootstrap.com/wp-content/uploads/2022/01/clever-admin-dashboard-template-badge-2x.jpg)
+![Home](https://cdn.discordapp.com/attachments/365559021916389376/1002433346317602817/Screen_Shot_2022-07-29_at_00.31.21.png)
 
 ![Example2](https://assets.startbootstrap.com/img/screenshots/themes/sb-admin-2.png)
 
