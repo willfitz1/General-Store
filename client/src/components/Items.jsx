@@ -16,17 +16,7 @@ const Items = (props) => {
   }
   useEffect(() => {
     getItem()
-  })
-
-  // const deleteItem = async (id) => {
-  //   console.log('banaana')
-  //   let res = await axios.delete(`http://localhost:3001/api/items/${id}`)
-  //   props.getItems()
-  // }
-
-  // const refresh = () => {
-  //   window.location.reload(false)
-  // }
+  }, [])
 
   const handleDelete = async (id) => {
     await axios.delete(`http://localhost:3001/api/items/${id}`)
@@ -34,10 +24,6 @@ const Items = (props) => {
     console.log('banaana')
     window.location.reload(false)
   }
-
-  // function handleClick() {
-  //   handleDelete()
-  // deleteItem()
 
   return (
     <div className="item-grid">
@@ -47,7 +33,6 @@ const Items = (props) => {
           <h3>{item.name}</h3>
           <h4>{item.description}</h4>
           <h4>{item.price}</h4>
-          {/* <button onClick={() => deleteItem(item._id)}>Delete Item</button> */}
           <button onClick={() => handleDelete(item._id)}>Delete Item</button>
         </div>
       ))}
