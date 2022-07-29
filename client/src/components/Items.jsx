@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Items = (props) => {
   let navigate = useNavigate()
@@ -22,7 +23,7 @@ const Items = (props) => {
     await axios.delete(`http://localhost:3001/api/items/${id}`)
     props.setItems()
     console.log('banaana')
-    window.location.reload(true)
+    window.location.reload(false)
   }
 
   return (
@@ -31,8 +32,9 @@ const Items = (props) => {
         <div className="item-card" key={item._id}>
           <img style={{ display: 'block' }} src={item.image} alt={item.name} />
           <h3>{item.name}</h3>
-          <h4>{item.description}</h4>
-          <h4>{item.price}</h4>
+          <h5>{item.description}</h5>
+          <h5>{item.price}</h5>
+          <Link to={`/itemdetails/${item._id}`}>View Item</Link>
           <button onClick={() => handleDelete(item._id)}>Delete Item</button>
         </div>
       ))}

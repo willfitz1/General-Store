@@ -19,14 +19,15 @@ const NewItem = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('submit')
-    axios.post('httpl://localhost:3001/api/items', itemValues)
+    axios.post('http://localhost:3001/api/items', itemValues)
     navigate('/items')
   }
 
   return (
     <div>
-      <h1>Please leave us a review and let us know if you'd come back!</h1>
-      <h4>Please fill the boxes below.</h4>
+      <h1>Anyone Can Sell An Item Here! </h1>
+      <h4>Please fill the boxes below with the information for your item.</h4>
+      <h5>Please be sure to include a link for your image.</h5>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -58,7 +59,7 @@ const NewItem = (props) => {
         <input
           type="text"
           name="image"
-          placeholder="Please Put A Link To An Image Here"
+          placeholder="Item Image"
           value={itemValues.image}
           onChange={handleChange}
         />

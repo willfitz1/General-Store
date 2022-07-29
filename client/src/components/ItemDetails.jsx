@@ -6,7 +6,6 @@ const BASE_URL = 'http://localhost:3001/api'
 
 const ItemDetails = (props) => {
   const [item, setItem] = useState('')
-  // let { id } = useParams()
 
   useEffect(() => {
     const getItemById = async (id) => {
@@ -29,7 +28,7 @@ const ItemDetails = (props) => {
             alignItems: 'center'
           }}
         >
-          <h1>{item.name}</h1>
+          <h1>{props.item.name}</h1>
         </div>
       </div>
       <div className="info">

@@ -55,8 +55,8 @@ const Review = (props) => {
           onChange={handleChange}
         />
         <br></br>
+        <button type="submit">Submit</button>
       </form>
-      <button type="submit">Submit</button>
     </div>
   )
 }
