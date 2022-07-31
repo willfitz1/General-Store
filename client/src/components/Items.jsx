@@ -10,20 +10,20 @@ const Items = (props) => {
     navigate(`${item._id}`)
   }
 
-  const getItem = async (id) => {
-    console.log('banaana')
-    let res = await axios.get(`http://localhost:3001/api/items/${id}`)
-    props.getItems()
-  }
-  useEffect(() => {
-    getItem()
-  }, [])
+  // const getItem = async (id) => {
+  //   console.log('banaana')
+  //   let res = await axios.get(`http://localhost:3001/api/items/${id}`)
+  //   // props.setItems()
+  //   console.log('fruitloops')
+  // }
+  // useEffect(() => {
+  //   getItem()
+  // }, [])
 
   const handleDelete = async (id) => {
     await axios.delete(`http://localhost:3001/api/items/${id}`)
-    props.setItems()
     console.log('banaana')
-    window.location.reload(false)
+    props.getItems()
   }
 
   return (
