@@ -28,13 +28,13 @@ const Items = (props) => {
 
   return (
     <div className="item-grid">
-      {props.items?.map((item) => (
+      {props.items?.map((item, index) => (
         <div className="item-card" key={item._id}>
           <img style={{ display: 'block' }} src={item.image} alt={item.name} />
           <h3>{item.name}</h3>
           <h5>{item.description}</h5>
           <h5>{item.price}</h5>
-          <Link to={`/itemdetails/${item._id}`}>View Item</Link>
+          <Link to={`/items/${item._id}/${index}`}>View Item</Link>
           <button onClick={() => handleDelete(item._id)}>Delete Item</button>
         </div>
       ))}
