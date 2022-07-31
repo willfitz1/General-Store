@@ -10,16 +10,6 @@ const Items = (props) => {
     navigate(`${item._id}`)
   }
 
-  // const getItem = async (id) => {
-  //   console.log('banaana')
-  //   let res = await axios.get(`http://localhost:3001/api/items/${id}`)
-  //   // props.setItems()
-  //   console.log('fruitloops')
-  // }
-  // useEffect(() => {
-  //   getItem()
-  // }, [])
-
   const handleDelete = async (id) => {
     await axios.delete(`http://localhost:3001/api/items/${id}`)
     console.log('banaana')
@@ -35,6 +25,7 @@ const Items = (props) => {
           <h5>{item.description}</h5>
           <h5>{item.price}</h5>
           <Link to={`/items/${item._id}/${index}`}>View Item</Link>
+          <Link to={`/edititem/${item._id}/${index}`}>Edit Item</Link>
           <button onClick={() => handleDelete(item._id)}>Delete Item</button>
         </div>
       ))}
