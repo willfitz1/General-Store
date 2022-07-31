@@ -23,7 +23,11 @@ const ItemDetails = (props) => {
   return (
     <div className="detail">
       <div className="detail-header">
-        <img src={props.items[index].image} alt={props.items[index].name} />
+        <img
+          className="itemImage"
+          src={props.items[index].image}
+          alt={props.items[index].name}
+        />
         <div
           style={{
             minWidth: '30em',
@@ -37,7 +41,7 @@ const ItemDetails = (props) => {
       </div>
       <div className="info">
         <div>
-          <h1>{props.items[index].description}</h1>
+          <h3>{props.items[index].description}</h3>
           <h3>{props.items[index].price}</h3>
         </div>
       </div>

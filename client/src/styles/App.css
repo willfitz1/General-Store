@@ -102,3 +102,14 @@ h4 {
 h5 {
   font-size: 15px;
 }
+
+h3 {
+  color: rgb(76,165,158);
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+  font-size: 30px;
+}
+
+.itemImage {
+  max-height: 30%;
+  max-width: 30%;
+}
