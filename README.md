@@ -25,17 +25,17 @@ The general store will allow you to check out each item specifically, and leave 
 [ ] Add a shopping cart.
 
 [ ] Add more items to cart with + - buttons.
-
+s
 [ ] Leave a star rating.
 
 ## **_Credits_**
 
-[Trello](https://trello.com/b/AcS6yvMt/dashboard)
+[Trello](https://trello.com/b/AcS6yvMt/general-store)
 
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 [Markdown Guide](https://ia.net/writer/support/general/markdown-guide)
 
-[drawIO](https://drive.google.com/file/d/1f8EtNYmoNLHXHDW9lxpdJ5n1JDt9A5cp/view?usp=sharing)
+[drawIO](https://app.diagrams.net/#G1f8EtNYmoNLHXHDW9lxpdJ5n1JDt9A5cp)
 
 [LucidChart](https://lucid.app/lucidchart/72435a7f-d7c8-4a9b-91d0-fd551852e912/edit?viewport_loc=628%2C7%2C1899%2C1035%2C0_0&invitationId=inv_64c94c5c-5040-4f11-8238-83594d2030d6#)
